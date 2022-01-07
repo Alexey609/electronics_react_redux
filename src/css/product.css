@@ -1,0 +1,126 @@
+.single-shop-product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.product-option-shop {
+    margin-top: 15px;
+}
+
+a {color: #1abc9c}
+a:hover, a:focus {color: #17a78b}
+.footer-bottom-area {
+  background: none repeat scroll 0 0 #000;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+
+.single-shop-product {margin-bottom: 50px}
+
+.pagination > li > a, .pagination > li > span {
+  color: #1abc9c;
+}
+
+.product-f-image {
+  position: relative;
+}
+.product-hover {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;overflow: hidden;border: 1px solid #ddd;
+}
+.product-hover:after {
+background: none repeat scroll 0 0 #000;
+content: "";
+height: 100%;
+left: -100%;
+opacity: 0.6;
+position: absolute;
+top: 0;
+width: 100%;transition: .4s;
+}
+.product-hover a {
+  background: none repeat scroll 0 0 #1abc9c;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  left: 10%;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #1abc9c;
+  width: 80%;z-index: 99;transition: .4s;
+}
+.product-hover a:hover {
+background: #000;
+text-decoration: none;border-color: #444;
+}
+.product-carousel-price ins {
+color: #1abc9c;
+font-weight: 700;
+margin-right: 5px;
+text-decoration: none;
+}
+.product-hover a i.fa {
+  margin-right: 5px;
+}
+.product-hover a.add-to-cart-link {top: -25%;}
+.product-hover a.view-details-link { bottom: -25%;}
+.single-product h2 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+
+.single-product h2 a {
+  color: #222;
+}
+.single-product p {
+  color: #1abc9c;
+  font-weight: 700;
+}
+
+.single-product {
+overflow: hidden;
+}
+.single-product:hover {}
+.single-product:hover .product-hover a.add-to-cart-link {top: 32%;}
+.single-product:hover .product-hover a.view-details-link {bottom: 32%;}
+.single-product:hover .product-hover:after{left: 0}
+
+
+.product-carousel {
+padding-top: 40px;
+}
+.latest-product .owl-nav {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.latest-product .owl-nav div, .related-products-wrapper .owl-nav div {
+border: 1px solid #1abc9c;
+color: #1abc9c;
+display: inline-block;
+margin-left: 15px;
+padding: 1px 10px;
+}
+.latest-product .owl-nav div:hover, .brand-wrapper .owl-nav div:hover, .related-products-wrapper .owl-nav div:hover {color: #222;border-color: #222}
+.brand-list {padding-top: 40px;}
+
+.add_to_cart_button {
+  background: none repeat scroll 0 0 #1abc9c;
+  border: medium none;
+  color: #fff;
+  padding: 6px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+.add_to_cart_button:hover {background-color: #222;color: #fff;text-decoration: none}
