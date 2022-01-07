@@ -7,4 +7,6 @@
 ### react-redux
 ### react-router
 ### json-server
-### redux-t hunk
+### redux-thunk
+
+## После запуска 'npm start' необходимо параллельно запустить в терминале команду 'npm run server'
