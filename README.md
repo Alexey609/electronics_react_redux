@@ -6,6 +6,7 @@
 ### redux
 ### react-redux
 ### react-router
+### axios
 ### json-server
 ### redux-thunk
 
