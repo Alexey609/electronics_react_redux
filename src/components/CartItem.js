@@ -27,15 +27,15 @@ function CartItem({ name, totalPrice, totalCount, onRemove, id }) {
 
               <td className="product-quantity">
                   <div className="quantity buttons_added">
-                      {/* <input type="button" className="minus" value="-"/> */}
+                       <input type="button" className="minus" value="-"/> 
                       <input type="number" size="4" className="input-text qty text" title="Qty" value={totalCount} min="0" step="1"/>
-                      {/* <input type="button" className="plus" value="+"/> */}
+                    <input type="button" className="plus" value="+"/>
                   </div>
               </td>
 
-              {/* <td className="product-subtotal">
+               {/* <td className="product-subtotal">
                   <span className="amount">£15.00</span> 
-              </td> */}
+              </td>  */}
           </tr>
          
        </tbody>            

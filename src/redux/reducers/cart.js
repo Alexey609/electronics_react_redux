@@ -37,10 +37,12 @@ const initialState = {
            const newItems = {
              ...state.items,
            };
+           const currentTotalPrice = newItems[action.payload].totalPrice;
            delete newItems[action.payload];   
             return {
               ...state,
               items: newItems,
+              totalPrice: state.totalPrice - currentTotalPrice,
             };
           } 
           
