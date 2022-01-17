@@ -38,14 +38,54 @@ const initialState = {
              ...state.items,
            };
            const currentTotalPrice = newItems[action.payload].totalPrice;
+           const currentTotalCount = newItems[action.payload].items.length;
            delete newItems[action.payload];   
             return {
               ...state,
               items: newItems,
               totalPrice: state.totalPrice - currentTotalPrice,
+              totalCount: state.totalCount - currentTotalCount,
             };
           } 
-          
+
+          case 'PLUS_CART_ITEM': {
+            const newItems = [
+              ...state.items[action.payload].items,
+              state.items[action.payload].items[0]
+            ];
+
+            return {
+              ...state,
+              items: {
+                ...state.items,
+                [action.payload]: {
+                  items: newItems,
+                  totalPrice: getTotalPrice(newItems)
+                }
+              }
+            };
+          } 
+
+            case 'MINUS_CART_ITEM': {
+              const oldItems = state.items[action.payload].items;
+              const newItems = oldItems.length > 1 ?
+              state.items[action.payload].items.slice(1) : oldItems;
+
+            return {
+              ...state,
+              items: {
+                ...state.items,
+                [action.payload]: {
+                  items: newItems,
+                  totalPrice: getTotalPrice(newItems)
+                }
+              }
+            };
+           }
+            
+
+
+                  
            default:
                return state;        
       }
